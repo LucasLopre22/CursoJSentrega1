@@ -1,15 +1,46 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculador</title>
+    <title>Simple Calculator</title>
 </head>
 <body>
-    <h1>Este es mi Calculador</h1>
-    <script src="./Entrega1LucasLopresto.js"></script> <!-- ASPETCO A EVALUAR 1 : Estructura HTML y archivo JS / El archivo JS está correctamentereferenciado en el HTML.- OK -->
+    <div id="calculator">
+        <input type="text" id="display" readonly>
+        <div>
+            <button id="btn-7">7</button>
+            <button id="btn-8">8</button>
+            <button id="btn-9">9</button>
+            <button id="btn-add">+</button>
+        </div>
+        <div>
+            <button id="btn-4">4</button>
+            <button id="btn-5">5</button>
+            <button id="btn-6">6</button>
+            <button id="btn-subtract">-</button>
+        </div>
+        <div>
+            <button id="btn-1">1</button>
+            <button id="btn-2">2</button>
+            <button id="btn-3">3</button>
+            <button id="btn-multiply">*</button>
+        </div>
+        <div>
+            <button id="btn-0">0</button>
+            <button id="btn-dot">.</button>
+            <button id="btn-calculate">=</button>
+            <button id="btn-divide">/</button>
+        </div>
+        <button id="btn-clear">Clear</button>
+        <button id="btn-historico">Historico</button>
+    </div>
+
+    <table id="historico">
+        <tr>
+            <th>Operación</th>
+            <th>Resultado</th>
+        </tr>
+    </table>
+
+    <script src="Entrega2LucasLopresto.js"></script>
 </body>
 </html>
-
